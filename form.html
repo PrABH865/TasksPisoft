@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <style>
+      body {
+        background: #7e7676;
+      }
+      fieldset {
+        /* padding: 20%; */
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10%;
+      }
+      form input {
+        display: flex;
+        gap: 3px;
+        row-gap: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+      <legend>
+      <h1>Form</h1>
+      </legend>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required />
+        <br />
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required />
+        <label for="checkbox">Select subjects:</label>
+        <label for="java">Java</label>
+        <input type="checkbox" name="java" id="java" required />
+        <label for="javascript">Javascript</label>
+        <input type="checkbox" name="javascript" id="javascript" required />
+        <label for="html and css">HTML and CSS</label>
+        <input
+          type="checkbox"
+          name="html and css"
+          id="htmkl and css"
+          required
+        />
+        <input type="file" name="" id="" multiple>
+        <br>
+        <br>
+        <label for="color">Select the Color:</label>
+        <input type="color" name="color" id="color" required />
+
+        <br />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </fieldset>
+    </form>
+  </body>
+</html>

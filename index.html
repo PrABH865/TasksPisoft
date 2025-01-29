@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://icon-icons.com/icons2/555/PNG/96/blogger_icon-icons.com_53598.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap"
+      rel="stylesheet"
+    />
+    <title>Blogger</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
+      body {
+        background-image: url("https://img.freepik.com/free-photo/online-message-blog-chat-communication-envelop-graphic-icon-concept_53876-139717.jpg");
+        background-size: cover;
+        font-family: "Jersey 10", serif;
+        font-weight: 700;
+        font-style: normal;
+        background-repeat: no-repeat;
+        background-clip: border-box;
+        backdrop-filter: blur(10px);
+        height: 100vh;
+      }
+      .navbar {
+        background-color: #777373;
+        padding: 10px;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        margin-right: 50rem;
+        height: 50px;
+        mix-blend-mode: difference;
+      }
+      li {
+        display: inline;
+        padding: 10px;
+      }
+      i {
+        margin-right: 5px;
+        color: black;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .container {
+        text-align: center;
+        margin-top: 10rem;
+        color: rgb(24, 22, 22);
+      }
+      .container h1 {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+      .container p {
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <img
+          src="https://logos-world.net/wp-content/uploads/2021/08/Blogger-Logo.png"
+          alt="logo"
+          height="40px"
+        />
+        <li>
+          <a href="../Home/home.html" id="home" onclick=""><i class="fa-solid fa-house"></i>Home</a>
+        </li>
+        <li>
+          <a href="../About/about.html" id="about"
+            ><i class="fa-solid fa-address-card"></i>About</a
+          >
+        </li>
+        <li>
+          <a href="../Blog/blog.html" id="blog"><i class="fa-solid fa-blog"></i>Blog</a>
+        </li>
+        <li>
+          <a href="../Contact/contact.html" id="contact"
+            ><i class="fa-solid fa-address-book"></i>Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>Welcome to my Web</h1>
+      <p>This is the content for this page.</p>
+      <picture>
+        <source
+          srcset="
+            https://www.shutterstock.com/image-photo/blogging-concept-web-blog-social-600nw-2484136087.jpg
+          "
+          media="(max-width: 1400px)"
+        />
+        <source
+          srcset="
+            https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?auto=compress&cs=tinysrgb&w=600
+          "
+          media="(min-width: 700px)"
+        />
+        <img
+          src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/surfer-240-200.jpg"
+          alt="surfing image"
+          style="margin: auto"
+        />
+      </picture>
+
+      <img
+        src="https://img.freepik.com/free-psd/3d-yellow-heart-shape-balloons_1409-3788.jpg?semt=ais_hybrid"
+        alt="umbrella"
+        usemap="#Box"
+      />
+      <!-- <map name="Box">
+        <area
+          shape="rect"
+          coords="34,44,270,350"
+          alt="Contact"
+          href="Contact/contact.html"
+        /> -->
+        <area
+          shape="circle"
+          coords="55,60,70"
+          alt="HOME"
+          href="Home/home.html"
+        />
+      </map>
+      <!-- <picture>
+        <source
+          srcset="/media/cc0-images/surfer-240-200.jpg"
+          media="(min-width: 600px)"
+        />
+        <img src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/surfer-240-200.jpg" alt="surfing image" />
+      </picture> -->
+    </div>
+
+
+    <script>
+      const home = document.getElementById("home");
+      const about = document.getElementById("about");
+      const blog = document.getElementById("blog");
+      const contact = document.getElementById("contact");
+const contactContent = document.getElementsByClassName("abt");
+     home.addEventListener("click", ()=> {
+        home.scrollIntoView();
+      })
+
+     about.addEventListener("click", ()=> {
+       about.scrollIntoView({behavior: "smooth"});
+      })
+
+    </script>
+  </body>
+</html>

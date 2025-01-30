@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      body {
+        background-image: url("https://img.freepik.com/free-photo/online-message-blog-chat-communication-envelop-graphic-icon-concept_53876-139717.jpg");
+        background-size: cover;
+        background-position: left;
+        background-size: 500%;
+        backdrop-filter: blur(20px);
+      }
+      .navbar {
+        background-color: #777373;
+        padding: 10px;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        margin-right: 50rem;
+        height: 50px;
+        mix-blend-mode: difference;
+      }
+      li {
+        display: inline;
+        padding: 10px;
+      }
+      i {
+        margin-right: 5px;
+        color: black;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 2rem 5rem 5rem 3rem;
+        align-items: center;
+        justify-content: center;
+        background-color: #777373;
+        border-radius: 10px;
+      }
+      h1 {
+        font-size: 3rem;
+        background-image: url("https://imgs.search.brave.com/CEZAGghdBNlAczSmff7DVWvsj5V8jI8FIQtWac06RQM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ncmFk/aWVudHMuYXBwL3B1/YmxpYy9pbWcvbWFp/bi9hdmVyYWdlY29s/b3IuanBn");
+        background-size: cover;
+        background-clip: text;
+        background-position: center;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      form input {
+        padding: 10px;
+        border: 3px solid black;
+        width: 300px;
+        border-radius: 10px;
+        border: none;
+        border-bottom: #777373;
+      }
+      form input:focus {
+        border: 2px solid blue;
+      }
+      input::placeholder {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+      textarea {
+        padding: 10px;
+        border: 3px solid black;
+        width: 300pt;
+      }
+      button {
+        background: rgb(129, 132, 133);
+        padding: 1px 20px 1px 20px;
+      }
+      textarea::placeholder {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <img
+          src="https://logos-world.net/wp-content/uploads/2021/08/Blogger-Logo.png"
+          alt="logo"
+          height="40px"
+        />
+        <li>
+          <a href="../Home/home.html"><i class="fa-solid fa-house"></i>Home</a>
+        </li>
+        <li>
+          <a href="../About/about.html"
+            ><i class="fa-solid fa-address-card"></i>About</a
+          >
+        </li>
+        <li>
+          <a href="../Blog/blog.html"><i class="fa-solid fa-blog"></i>Blog</a>
+        </li>
+        <li>
+          <a href="../Contact/contact.html"
+            ><i class="fa-solid fa-address-book"></i>Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <h1>Welcome to the Contact Page</h1>
+    <form>
+      <input type="text" placeholder="Enter your name" required />
+      <input type="email" placeholder="Enter your email" required />
+      <textarea placeholder="Enter your message"></textarea>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

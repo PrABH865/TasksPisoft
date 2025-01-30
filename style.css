@@ -1,0 +1,42 @@
+* {
+  background-image: url("https://img.freepik.com/free-photo/online-message-blog-chat-communication-envelop-graphic-icon-concept_53876-139717.jpg");
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background: #333;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 2px 2px 20px 2px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+nav img {
+  padding-right: 35rem;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+  background: #fff;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+nav ul .img {
+  mix-blend-mode: multiply;
+}

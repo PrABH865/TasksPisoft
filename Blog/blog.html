@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      .navbar {
+        background-color: #777373;
+        padding: 10px;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        margin-right: 50rem;
+        height: 50px;
+        mix-blend-mode: difference;
+      }
+      li {
+        display: inline;
+        padding: 10px;
+      }
+      i {
+        margin-right: 5px;
+        color: black;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .table-container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding: 2rem 5rem 5rem 3rem;
+        align-items: center;
+        justify-content: center;
+        background-color: #777373;
+        border-radius: 10px;
+      }
+      /* table,
+      th,
+      td {
+        border: 6px solid black;
+      } */
+      .morning {
+        width: 5px;
+      }
+      .table4 {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <img
+          src="https://logos-world.net/wp-content/uploads/2021/08/Blogger-Logo.png"
+          alt="logo"
+          height="40px"
+        />
+        <li>
+          <a href="../Home/home.html"><i class="fa-solid fa-house"></i>Home</a>
+        </li>
+        <li>
+          <a href="../About/about.html"
+            ><i class="fa-solid fa-address-card"></i>About</a
+          >
+        </li>
+        <li>
+          <a href="../Blog/blog.html"><i class="fa-solid fa-blog"></i>Blog</a>
+        </li>
+        <li>
+          <a href="../Contact/contact.html"
+            ><i class="fa-solid fa-address-book"></i>Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <h1>Welcome to the Blog Page</h1>
+    <div class="table-container">
+      <caption>
+        Table of Students CSE
+      </caption>
+      <table border="2">
+        <thead>
+          <tr>
+            <th>Sr no.</th>
+            <th>Name</th>
+            <th>Branch</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Prabh</td>
+            <td>CSE</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Rajit</td>
+            <td>ME</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Prabh</td>
+            <td>CSE</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <caption>
+        Table of Students
+      </caption>
+      <table border="2">
+        <thead>
+          <tr>
+            <th>Sr no.</th>
+            <th>Name</th>
+            <th>Branch</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Prabh</td>
+            <td rowspan="3">CSE</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Rajit</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Prabh</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <caption>
+        Table of Students Kullu Himachal
+      </caption>
+      <table border="2">
+        <tr>
+          <th>Full name</th>
+          <td>Prabh</td>
+          <td>Jot</td>
+        </tr>
+        <tr>
+          <th>Age</th>
+          <td colspan="2">24</td>
+        </tr>
+        <tr>
+          <th>State</th>
+          <td>Himachal</td>
+          <td>Kullu</td>
+        </tr>
+      </table>
+    </div>
+
+    <!--  Table 3 -->
+    <table border="2">
+      <tr>
+        <th rowspan="3">Day</th>
+        <th colspan="4">Seminar</th>
+      </tr>
+      <tr>
+        <th colspan="2">Schedule</th>
+        <th rowspan="2">Topic</th>
+      </tr>
+      <tr>
+        <th>begin</th>
+        <th>end</th>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td>8:00 PM</td>
+        <td>9:00 PM</td>
+        <td>Introducton to HTML</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>8:00 PM</td>
+        <td>9:00 PM</td>
+        <td>Introducton to CSS</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>8:00 PM</td>
+        <td>9:00 PM</td>
+        <td>Introducton to JavaScript</td>
+      </tr>
+    </table>
+
+    <!-- Table 4 -->
+     <div class="table4">
+    <table style="text-align: center" , border="1px" >
+      <tr>
+        <td style="width: 70px"></td>
+        <td style="width: 80px"></td>
+        <td colspan="3">Morning</td>
+        <td>lunch</td>
+        <td colspan="4">afternoon</td>
+        <td colspan="3">evening</td>
+      </tr>
+      <tr style="height: 60px">
+        <td style="width: 70px"></td>
+        <td style="width: 80px"></td>
+        <td class="morning">9-10 am</td>
+        <td class="morning">10-11 am</td>
+        <td class="morning">11-12 pm</td>
+        <td>1-2pm</td>
+        <td class="morning">2-3 pm</td>
+        <td class="morning">3-4 pm</td>
+        <td class="morning">4-5 pm</td>
+        <td>5-6pm</td>
+        <td class="morning">6-7 pm</td>
+        <td class="morning">7-8 pm</td>
+        <td class="morning">8-9 pm</td>
+      </tr>
+      <tr>
+        <td rowspan="2" style="width: 70px">Work</td>
+        <td style="width: 80px">Monday</td>
+        <td colspan="3">Development meeting</td>
+        <td></td>
+        <td colspan="3">client meeting</td>
+        <td>commute</td>
+        <td colspan="3">free</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td colspan="3">in office</td>
+        <td></td>
+        <td colspan="7">in office</td>
+      </tr>
+      <tr>
+        <td rowspan="2">lecture</td>
+        <td>Wednesday</td>
+        <td colspan="3">CSC205</td>
+        <td></td>
+        <td colspan="7">Prepration</td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td colspan="3">MAM200</td>
+        <td></td>
+        <td>Tutorials for MAM200</td>
+        <td colspan="7">Free</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Research</td>
+        <td>Friday</td>
+        <td colspan="3">Research</td>
+        <td></td>
+        <td colspan="7">Research</td>
+      </tr>
+    </table>
+    </div>
+  </body>
+</html>
